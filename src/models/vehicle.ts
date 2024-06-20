@@ -61,6 +61,6 @@ Vehicle.init(
   }
 );
 
-export async function createVehicle() {
+export async function syncVehicleTable() {
   await Vehicle.sync();
 }

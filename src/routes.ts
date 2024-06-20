@@ -3,8 +3,8 @@ import * as VehicleController from "./controllers/VehicleController";
 
 const route = Router();
 
-route.get("/", (req: Request, res: Response) => {
-  res.send("OK");
+route.get("/ping", (req: Request, res: Response) => {
+  res.send("pong");
 });
 
 // Find vehicle using id

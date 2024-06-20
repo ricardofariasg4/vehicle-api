@@ -12,7 +12,7 @@ export async function findVehicleById(req: Request, res: Response) {
 
 export async function createVehicle(req: Request, res: Response) {
   try {
-    const [rental_company, model, brand, year, motor, doors, exchange, air_conditioning] = req.body;
+    const { rental_company, model, brand, year, motor, doors, exchange, air_conditioning } = req.body;
 
     const vehicle = await Vehicle.create({
       rental_company,
